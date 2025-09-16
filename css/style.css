@@ -1,0 +1,43 @@
+/* navigation bar */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    border: 1px rebeccapurple solid;
+    padding: 0 10rem;
+}
+
+.main,
+.info,
+.quote,
+.action_call {
+    background-color: aqua;
+    flex: 0 1 25rem;
+}
+
+nav {
+    border: black 1px solid;
+    ul {
+        padding: 0%;
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+
+        li {
+            border: 1px solid black;
+            padding: 0 1rem;
+            flex: 0 1 1rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        li.logo {
+            margin-right: auto;
+        }
+    }
+}
