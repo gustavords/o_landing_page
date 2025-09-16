@@ -97,7 +97,32 @@ nav {
 
             p {
                 flex: 1 1 1rem;
+                text-align: center;
             }
         }
     }
+}
+
+.quote {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+
+    p {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    p:first-child {
+        font-size: xx-large;
+    }
+
+    p:last-child {
+        align-self: flex-end;
+        margin-right: 2em;
+        font-size: x-large;
+        font-weight: bolder;
+
+    }
+
 }
