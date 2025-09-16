@@ -18,6 +18,11 @@ body {
     display: flex;
 }
 
+.info,
+.quote {
+    padding: 0 15rem;
+}
+
 nav {
     border: black 1px solid;
 
@@ -125,4 +130,45 @@ nav {
 
     }
 
+}
+
+.action_call {
+
+    flex: 0 1 20rem;
+    justify-content: center;
+    align-items: center;
+
+    .action_wrap {
+        flex: 1;
+        padding: 3em 1em;
+        background-color: cornsilk;
+        border-radius: 16px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0%;
+
+        div {
+                padding: 0%;
+            p{
+                padding: 0%;
+                color: blueviolet;
+                margin: 0%;
+            }
+            p:first-child{
+                font-size: large;
+                font-weight: bolder;
+            }
+        }
+
+        button {
+            flex: 0 1 10em;
+            all: unset;
+            border: 2px red solid;
+            padding: .5rem 3.5rem;
+            font-size: larger;
+            border-radius: 5%;
+        }
+    }
 }
