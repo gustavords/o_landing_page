@@ -1,4 +1,17 @@
-/* navigation bar */
+/* colours and fonts */
+* {
+    font-family: "Roboto", Times, serif;
+}
+
+nav, .main {
+    background-color: #1F2937;
+}
+
+nav a {
+    color: #E5E7EB;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,6 +19,7 @@ body {
 
 .section {
     border: 1px rebeccapurple solid;
+
     padding: 0 10rem;
 }
 
@@ -13,7 +27,7 @@ body {
 .info,
 .quote,
 .action_call {
-    background-color: aqua;
+    /* background-color: aqua; */
     flex: 0 1 25rem;
     display: flex;
 }
@@ -24,8 +38,6 @@ body {
 }
 
 nav {
-    border: black 1px solid;
-
     ul {
         padding: 0%;
         list-style-type: none;
@@ -34,17 +46,27 @@ nav {
         justify-content: space-around;
 
         li {
-            border: 1px solid black;
             padding: 0 1rem;
             flex: 0 1 1rem;
 
             a {
                 text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
+
         li.logo {
             margin-right: auto;
+            align-self: center;
+
+            a>img {
+                height: 3rem;
+                align-self: center;
+                filter: invert(24%) sepia(68%) saturate(7484%) hue-rotate(355deg) brightness(92%) contrast(121%);
+            }
         }
     }
 }
@@ -150,12 +172,14 @@ nav {
         gap: 0%;
 
         div {
-                padding: 0%;
-            p{
+            padding: 0%;
+
+            p {
                 padding: 0%;
                 margin: 0%;
             }
-            p:first-child{
+
+            p:first-child {
                 font-size: large;
                 font-weight: bolder;
             }
@@ -172,7 +196,7 @@ nav {
     }
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
